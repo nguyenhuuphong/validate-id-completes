@@ -26,7 +26,7 @@ module.exports.addPost = function (req, res){
   if (!req.body.name){
     errors.push("Name is required")
   }
-  if (!req.body.age){
+  if (!req.body.age || req.body.name.length > 30){
     errors.push("Age is required")
   }
   if (errors.length){

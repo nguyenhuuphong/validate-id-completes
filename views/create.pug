@@ -6,8 +6,8 @@ block content
 			.alert.alert-danger= error
 	h1 
 	form(class="ml-4" action="/books/create", method="POST")
-		input(type/text, name="title" placeholder="nhập title" value= values ? values.title : '' )
+		input(type/text, name="title", placeholder="nhập title", value= values ? values.title : '' )
 		br
-		textarea(type/text, name="des" placeholder="nhập description", style="width:250px; height:100px;")= values ? values.des : ''
+		textarea(type/text, name="des", placeholder="nhập description", style="width:250px; height:100px;")= values ? values.des : ''
 		br
 		button.btn.btn-success add book

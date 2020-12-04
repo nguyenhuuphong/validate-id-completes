@@ -1,114 +1,31 @@
 {
-  "books": [
-    {
-      "title": "sach van học",
-      "des": "ádasd",
-      "id": "YcGHF4uwC"
-    },
-    {
-      "title": "sach van học",
-      "des": "xxxxx",
-      "id": "_CKBg_qLY"
-    },
-    {
-      "title": "sách lịch sử",
-      "des": "yyyy",
-      "id": "RbR_ezBp7"
-    },
-    {
-      "title": "sách giáo dục",
-      "des": "ádasd",
-      "id": "ihAu0M6-g"
-    },
-    {
-      "title": "ffff",
-      "des": "sdasda",
-      "id": "RAtblqeQ8"
-    }
-  ],
-  "users": [
-    {
-      "name": "Phong",
-      "age": "97"
-    },
-    {
-      "name": "Khoi",
-      "age": "97"
-    }
-  ],
+  "books": [],
   "user": [
     {
-      "name": "đoàn",
-      "age": "45",
-      "id": "kCclV4GaH"
+      "name": "phong",
+      "age": "",
+      "id": "6QWsQEZi2"
     },
     {
       "name": "phong",
-      "age": "56",
-      "id": "uIdx5Ji1q"
+      "age": "2121",
+      "id": "3DTT-D0r_"
     },
     {
-      "name": "nâu",
-      "age": "15",
-      "id": "-yYdyMmbP"
+      "name": "ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss",
+      "age": "1",
+      "id": "2md8FUGGt"
     },
     {
-      "name": "sdadasda",
-      "age": "",
-      "id": "DyyUoc-M4"
+      "name": "ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss",
+      "age": "111",
+      "id": "T4Vnlxtan"
     },
     {
-      "name": "hoàng",
-      "age": "13",
-      "id": "ILEuTOj3Z"
-    },
-    {
-      "name": "phú",
-      "age": "33",
-      "id": "WP2F6-CA-"
-    },
-    {
-      "name": "hoán phong",
-      "age": "",
-      "id": "LeD4XdOYh"
+      "name": "ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss",
+      "age": "111",
+      "id": "DoxQVAyeh"
     }
   ],
-  "trans": [
-    {
-      "userId": "kCclV4GaH",
-      "bookId": "YcGHF4uwC",
-      "isComplete": "false",
-      "id": "CugN6beDp"
-    },
-    {
-      "userId": "kCclV4GaH",
-      "bookId": "YcGHF4uwC",
-      "isComplete": "true",
-      "id": "0qwMGRdcP"
-    },
-    {
-      "userId": "kCclV4GaH",
-      "bookId": "YcGHF4uwC",
-      "isComplete": "true",
-      "id": "97A9WpTyw"
-    },
-    {
-      "userId": "uIdx5Ji1q",
-      "bookId": "RbR_ezBp7",
-      "isComplete": "false",
-      "id": "ay4cxxvpz"
-    },
-    {
-      "userId": "-yYdyMmbP",
-      "bookId": "YcGHF4uwC",
-      "isComplete": "false",
-      "id": "IXy8KsEIT"
-    },
-    {
-      "userId": "ILEuTOj3Z",
-      "bookId": "ihAu0M6-g",
-      "isComplete": "false",
-      "id": "qmdnNc-qt"
-    }
-  ]
+  "trans": []
 }
