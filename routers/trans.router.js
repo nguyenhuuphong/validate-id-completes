@@ -14,6 +14,19 @@ router.post("/create", controller.createPost);
 
 router.get("/:id/complete", (req, res )=>{
   var getId = req.params.id;
+  var errors = [];
+  if (!getId){
+    errors.push("id transaction is null")
+  }
+    if (errors.length){
+     res.render("transupdate",{
+      errors: errors,
+      values: req.body
+     });
+     return;
+   }
+  
+  
   var getData = db
          .get("trans")
          .find({ id: getId })

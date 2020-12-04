@@ -1,3 +1,7 @@
+if errors
+  each error in errors
+    .alert.alert-danger= error
+
 h1 chỉnh sửa tình trạng sách
 form( action=""   method="POST")
   input(type='text' name='userId' value=trans.userId) 
