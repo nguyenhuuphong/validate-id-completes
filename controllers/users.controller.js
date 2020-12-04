@@ -18,15 +18,12 @@ module.exports.add = function(req, res) {
 
 module.exports.addPost = function (req, res){
   req.body.id = shortid.generate();
-    db.get('user')
-      .push(req.body)
-      .write();
   var errors = []
 
-  if (!req.body.name){
+  if (!req.body.name || req.body.name.length > 30){
     errors.push("Name is required")
   }
-  if (!req.body.age || req.body.name.length > 30){
+  if (!req.body.age){
     errors.push("Age is required")
   }
   if (errors.length){
@@ -36,6 +33,9 @@ module.exports.addPost = function (req, res){
      });
      return;
    }
+   db.get('user')
+      .push(req.body)
+      .write();
     res.redirect("/user");
   
 };
