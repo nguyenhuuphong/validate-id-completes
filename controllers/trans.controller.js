@@ -72,3 +72,33 @@ module.exports.createPost = function(req, res){
     res.redirect("/transaction");
 };
 
+module.exports.idCom = function (req, res ){
+  var getId = req.params.id;
+   var getData = db
+         .get("trans")
+         .find({ id: getId })
+         .value();
+  	if(!getData){
+		return res.send("your id not found");
+	} 
+  
+  
+ 
+    res.render("transupdate", {
+    trans: getData
+ }); 
+}
+module.exports.idComPost = function (req ,res){
+  var id = req.params.id;
+  var userId = req.body.userId;
+  var bookId  = req.body.bookId;
+  var isComplete= req.body.isComplete
+   
+   db.get('trans')
+  .find({ id: id })
+  .assign({ userId: userId, bookId: bookId,isComplete: isComplete })
+  .write()
+  
+  res.redirect("/transaction");
+}
+
